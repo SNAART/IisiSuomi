@@ -1,18 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="18dp"
-        android:text="Iisi Suomi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/engWord"
+            android:textSize="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"/>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridViewAnswer"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="4dp"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="spacingWidthUniform"
+            android:gravity="center" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridViewQuestion"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="4dp"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="spacingWidthUniform"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
