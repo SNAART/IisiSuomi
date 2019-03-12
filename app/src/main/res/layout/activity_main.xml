@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal"
-    tools:context=".MainActivity">
+    tools:context=".FillTheBoxes">
 
 
     <LinearLayout
@@ -35,8 +35,7 @@
             android:columnWidth="40dp"
             android:numColumns="auto_fit"
             android:scrollbars="none"
-            android:stretchMode="spacingWidthUniform"
-            android:gravity="center" />
+            android:stretchMode="spacingWidthUniform" />
 
         <GridView
             android:layout_width="match_parent"
@@ -49,14 +48,13 @@
             android:columnWidth="40dp"
             android:numColumns="auto_fit"
             android:scrollbars="none"
-            android:stretchMode="spacingWidthUniform"
-            android:gravity="center"/>
+            android:stretchMode="spacingWidthUniform" />
     </LinearLayout>
 
 
     <Button
         android:id="@+id/btnSubmit"
-        android:text="Submit"
+        android:text="NEXT"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

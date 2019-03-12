@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.GridView;
 
 import com.example.iisisuomi.Common.Common;
-import com.example.iisisuomi.MainActivity;
+import com.example.iisisuomi.FillTheBoxes;
 
 import java.util.List;
 
@@ -18,13 +18,13 @@ public class GridViewQuestionAdapter extends BaseAdapter {
 
     private List<String> suggestSource;
     private Context context;
-    private MainActivity mainActivity;
+    private FillTheBoxes fillTheBoxes;
 
 
-    public GridViewQuestionAdapter(List<String> suggestSource, Context context, MainActivity mainActivity) {
+    public GridViewQuestionAdapter(List<String> suggestSource, Context context, FillTheBoxes fillTheBoxes) {
         this.suggestSource = suggestSource;
         this.context = context;
-        this.mainActivity = mainActivity;
+        this.fillTheBoxes = fillTheBoxes;
     }
 
     @Override
@@ -66,34 +66,34 @@ public class GridViewQuestionAdapter extends BaseAdapter {
                     @Override
                     public void onClick(View v) {
                         //If correct answer contains character user selected
-                        if(String.valueOf(mainActivity.answer).contains(suggestSource.get(position)))
+                        if(String.valueOf(fillTheBoxes.answer).contains(suggestSource.get(position)))
                         {
                             char compare = suggestSource.get(position).charAt(0); // Get char
 
-                            for(int i =0;i<mainActivity.answer.length;i++)
+                            for(int i = 0; i< fillTheBoxes.answer.length; i++)
                             {
-                                if(compare == mainActivity.answer[i])
+                                if(compare == fillTheBoxes.answer[i])
                                     Common.user_submit_answer[i] = compare;
                             }
 
                             //Update UI
                             GridViewAnswerAdapter answerAdapter = new GridViewAnswerAdapter(Common.user_submit_answer,context);
-                            mainActivity.gridViewAnswer.setAdapter(answerAdapter);
+                            fillTheBoxes.gridViewAnswer.setAdapter(answerAdapter);
                             answerAdapter.notifyDataSetChanged();
 
                             //Remove from suggest source
-                            mainActivity.suggestSource.set(position,"null");
-                            mainActivity.questionAdapter = new GridViewQuestionAdapter(mainActivity.suggestSource,context,mainActivity);
-                            mainActivity.gridViewQuestion.setAdapter(mainActivity.questionAdapter);
-                            mainActivity.questionAdapter.notifyDataSetChanged();
+                            fillTheBoxes.suggestSource.set(position,"null");
+                            fillTheBoxes.questionAdapter = new GridViewQuestionAdapter(fillTheBoxes.suggestSource,context, fillTheBoxes);
+                            fillTheBoxes.gridViewQuestion.setAdapter(fillTheBoxes.questionAdapter);
+                            fillTheBoxes.questionAdapter.notifyDataSetChanged();
                         }
                         else // else
                         {
                             //Remove from suggest source
-                            mainActivity.suggestSource.set(position,"null");
-                            mainActivity.questionAdapter = new GridViewQuestionAdapter(mainActivity.suggestSource,context,mainActivity);
-                            mainActivity.gridViewQuestion.setAdapter(mainActivity.questionAdapter);
-                            mainActivity.questionAdapter.notifyDataSetChanged();
+                            fillTheBoxes.suggestSource.set(position,"null");
+                            fillTheBoxes.questionAdapter = new GridViewQuestionAdapter(fillTheBoxes.suggestSource,context, fillTheBoxes);
+                            fillTheBoxes.gridViewQuestion.setAdapter(fillTheBoxes.questionAdapter);
+                            fillTheBoxes.questionAdapter.notifyDataSetChanged();
                         }
                     }
                 });

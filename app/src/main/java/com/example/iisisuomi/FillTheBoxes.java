@@ -19,7 +19,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class FillTheBoxes extends AppCompatActivity {
 
     public List<String> suggestSource = new ArrayList<>();
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     gridViewAnswer.setAdapter(answerAdapter);
                     answerAdapter.notifyDataSetChanged();
 
-                    GridViewQuestionAdapter questionAdapter = new GridViewQuestionAdapter(suggestSource,getApplicationContext(),MainActivity.this);
+                    GridViewQuestionAdapter questionAdapter = new GridViewQuestionAdapter(suggestSource,getApplicationContext(), FillTheBoxes.this);
                     gridViewQuestion.setAdapter(questionAdapter);
                     questionAdapter.notifyDataSetChanged();
 
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(MainActivity.this, "Incorrect!!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FillTheBoxes.this, "Incorrect!!! Try to finish the word!", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -100,9 +100,17 @@ public class MainActivity extends AppCompatActivity {
 
         //add answer character to List
         suggestSource.clear();
+        for(char item:answer) {
+            //add finnish word to list
+            suggestSource.add(String.valueOf(item));
+        }
 
+        //add random characters
+        for(int i = answer.length; i<answer.length*3; i++){
+            suggestSource.add(Common.alphabet_character[random.nextInt(Common.alphabet_character.length)]);
+        }
         //alphabet
-        for(int i = 1; i<Common.alphabet_character.length; i++){
+        for(int i = 0; i<Common.alphabet_character.length; i++){
             suggestSource.add(Common.alphabet_character[i]);
         }
 
