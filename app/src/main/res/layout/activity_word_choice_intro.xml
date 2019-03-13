@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.iisisuomi.WordChoiceIntro"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/wordchoiceintrotext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You will be given 20 words on Finnish"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"/>
+
+    <TextView
+        android:id="@+id/wordchoiceintrotext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your job is to choose the meaning for each word"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wordchoiceintrotext1"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/wordchoiceintrotext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wordchoiceintrotext2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Correct answer: +1 point"
+        android:textColor="@android:color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/wordchoiceintrotext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wordchoiceintrotext3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/wordchoiceintrotext5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good luck!"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wordchoiceintrotext4"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/button_Start_game2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="StartGame2OnClick"
+        android:text="Start"
+        android:background="#fea3aa"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wordchoiceintrotext5"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"/>
+
+</RelativeLayout>

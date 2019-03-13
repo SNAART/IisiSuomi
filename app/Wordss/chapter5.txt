@@ -1,0 +1,30 @@
+herätä;to wake up
+herätyskello;alarm clock
+soida;to sound
+suihku;to shower
+tehdä;to make
+aamupala;breakfast
+lehti;magazine
+syödä;to eat
+muroja;cereal
+voileipä;sandwich
+aamu;morning
+juoda;to drink
+arkkitehti;architect
+piirtää;to draw
+tietokone;computer
+tunti;hour
+puoli;half
+pankki;bank
+kävellä;to walk
+pelata;to play
+jalkapallo;football
+ulkona;outside
+uida;to swim
+sandaalit;sandal
+ilta;evening
+väsynyt;tired
+kenkä;shoes
+pestä;to wash
+tehdä ruokaa;make food
+tassia;to dance

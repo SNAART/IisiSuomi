@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iisisuomi.SelectChapter"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="SELECT CHAPTER"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:background="#b2cefe"
+        android:textColor="#ffff"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/headtitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="2">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Chap 1"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:padding="20dp"
+            android:id="@+id/checkbox_chaper1"
+            android:background="#c9dcfe"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Chap 2"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:padding="20dp"
+            android:id="@+id/checkbox_chaper2"
+            android:background="#C8C3FF"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="2">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Chap 3"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:padding="20dp"
+            android:id="@+id/checkbox_chaper3"
+            android:background="#b9d2fe"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Chap 4"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:padding="20dp"
+            android:id="@+id/checkbox_chaper4"
+            android:background="#A3C6DB"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="2">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Chap 5"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:padding="20dp"
+            android:id="@+id/checkbox_chaper5"
+            android:background="#ABB4E7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/button_selectchapter_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="SelectChapter_StartOnClick"
+            android:text="Start"
+            android:textSize="30dp"
+            android:textColor="#ffff"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="#fea3aa"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

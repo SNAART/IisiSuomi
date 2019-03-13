@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="32dp"
+    android:background="@color/colorAccent"
+    tools:context="com.example.iisisuomi.WordChoiceStatistic">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingLeft="20dp"
+        android:text="SCORE: "
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:fontFamily="casual"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score"
+        android:padding="8dp"
+        android:text="HIGHSCORE: "
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:fontFamily="casual"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/colorAccent"
+        android:onClick="onRepeatClick"
+        app:srcCompat="@drawable/play" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:onClick="onExitClick"
+        app:srcCompat="@drawable/exit" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+
+        app:fontFamily="casual" />
+
+</RelativeLayout>

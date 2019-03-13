@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">IisiSuomi</string>
+    <string name="app_name">My Application</string>
+    <string name="go_button1">Go to Vocabulary Activity</string>
+    <string name="title_activity_time_challenge">TimeChallenge</string>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.iisisuomi.MainActivity">
+    tools:context="com.example.iisisuomi.SelectGame">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,26 +12,26 @@
         android:orientation="vertical"
         android:weightSum="2">
         <Button
-            android:id="@+id/button_vocab"
+            android:id="@+id/button_fillthebox"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#b2cefe"
-            android:text="VOCABULARY"
-            android:textSize="50dp"
+            android:background="#F9D656"
+            android:text="Fill The Box"
+            android:textSize="40dp"
             android:textColor="#FFFFFF"
-            android:onClick="VocabOnClick"
+            android:onClick="FillTheBoxOnClick"
             android:layout_weight="1"
- />
+            />
 
         <Button
-            android:id="@+id/button_game"
+            android:id="@+id/button_wordchoice"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#baed91"
-            android:text="GAME"
-            android:textSize="50dp"
-            android:onClick="GameOnClick"
+            android:background="#fea3aa"
+            android:text="Word Choice"
+            android:textSize="40dp"
             android:textColor="#FFFFFF"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="WordChoiceOnClick"/>
     </LinearLayout>
 </RelativeLayout>

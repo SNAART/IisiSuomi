@@ -1,0 +1,30 @@
+teksti;sentence
+naimisissa;married
+lapsi;child
+bussikuski;bus driver
+työpaikka;workplace
+sama;same
+pitkä;long
+vaalea;blonde
+tukka;hair
+silmä;eye
+äiti;mother
+isä;father
+isoveli;older brother
+pikkusisko;younger sister
+keittiö;kitchen
+puhelias;talkative
+tumma;dark
+tyttöystävä;girlfriend
+kauppa;market
+pyörä;bicycle
+ujo;shy
+söpö;cute
+kotona;at home
+kerros;floor
+iloinen;cheerful
+kihara;curly
+vanhemmat;parents
+isovanhemmat;grandparents
+vaalea;light (blond, fair)
+työ;work, job

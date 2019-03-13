@@ -25,11 +25,13 @@ public class GridViewAnswerAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
+
         return answerCharacter[position];
     }
 
     @Override
     public long getItemId(int position) {
+
         return position;
     }
 
@@ -40,7 +42,7 @@ public class GridViewAnswerAdapter extends BaseAdapter {
             //Create new button
             button = new Button(context);
             button.setLayoutParams(new GridView.LayoutParams(85,85));
-            button.setPadding(8,8,8,8);
+            button.setPadding(10,10,10,10);
             button.setBackgroundColor(Color.DKGRAY);
             button.setTextColor(Color.YELLOW);
             button.setText(String.valueOf(answerCharacter[position]));

@@ -1,0 +1,29 @@
+kuukausi;month
+vuosi;year
+sää, ilma;weather
+koti;home
+sähköposti;email
+toivottavasti;hopefully (I hope)
+nyt;now
+myös;also
+yleensä;usually, generally
+joskus;sometimes
+ymmärtää;to understand
+tietää;to know
+lukea;to read
+kirjoittaa;to write
+pieni;little, small
+iso, suuri;big, large
+kaunis;beautiful
+huono;bad
+lämmin;warm
+kylmä;cold
+valoisa;bright
+uusi;new
+ilma;air
+kitara;guitar
+soittaa;to call
+otsikko;title
+lukea;to read
+joskus;sometimes
+nukkua;to sleep

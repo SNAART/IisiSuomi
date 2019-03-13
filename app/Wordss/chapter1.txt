@@ -1,0 +1,28 @@
+hei;hello
+koulu;school
+kurssi;course
+opiskelija;student
+opettaja;teacher
+tietotekniikka;information technology
+asua;live
+puhua;speak
+nimi;name
+puhelin;phone
+päivä;day
+vanha;old
+hyvä;good
+opiskella;learn
+etunimi;first name
+sukunimi;last name
+täällä;here
+tervetuloa;welcome
+anteeksi;sorry, excuse me
+äidinkieli;mother tongue
+maanantai;monday
+tiistai;tuesday
+keskiviikko;wednesday
+torstai;thursday
+perjantai;friday
+lauantai;saturday
+sunnuntai;sunday
+viikonloppu;weekend (sat and sun)

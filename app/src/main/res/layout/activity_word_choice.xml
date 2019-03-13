@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.iisisuomi.WordChoice"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fea3aa">
+
+        <TextView
+            android:id="@+id/WordChoiceScore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Score: "
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/buttonwordChoiceQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#FE5764"
+            android:onClick="quitOnClick"
+            android:text="QUIT"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/WordChoiceQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Fox"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="55dp"
+        android:layout_weight="5"/>
+
+    <Button
+        android:id="@+id/WordChoiceChoice1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Teacher"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:background="#fea3aa"
+        android:layout_weight="2"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/WordChoiceChoice2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Student"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:background="#fea3aa"
+        android:layout_weight="2"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/WordChoiceChoice3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="30dp"
+        android:text="School"
+        android:textColor="#fff"
+        android:background="#fea3aa"
+        android:layout_weight="2"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.iisisuomi">
 
-    <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FillTheBoxes">
+        <activity android:name="com.example.iisisuomi.FillTheBoxEnd"></activity>
+        <activity android:name="com.example.iisisuomi.WordChoiceStatistic" />
+        <activity android:name="com.example.iisisuomi.WordChoice" />
+        <activity android:name="com.example.iisisuomi.FillTheBox" />
+        <activity android:name="com.example.iisisuomi.FillTheBoxIntro" />
+        <activity android:name="com.example.iisisuomi.WordChoiceIntro" />
+        <activity android:name="com.example.iisisuomi.SelectChapter2" />
+        <activity android:name="com.example.iisisuomi.SelectGame" />
+        <activity android:name="com.example.iisisuomi.SelectChapter" />
+        <activity android:name="com.example.iisisuomi.Vocabulary" />
+        <activity android:name="com.example.iisisuomi.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

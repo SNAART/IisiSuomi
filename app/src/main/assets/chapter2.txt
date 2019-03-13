@@ -1,0 +1,56 @@
+maa;country
+kaupunki;city, town
+nainen;woman
+mies;man
+tyttö;girl
+poika;boy
+perhe;family
+ystävä;friend
+raha;money
+halpa;cheap
+kallis;expensive
+ostaa;to buy
+maksaa;to cost, to pay
+mennä;to go
+tulla;to come
+vähän;a little
+paljon;much, a lot
+ruoka;food
+jäätelö;ice cream
+kahvi;coffee
+puisto;park
+nauraa;to laugh
+numero;number
+bussipysäkki;bus station
+ajaa;to drive
+auto;car
+kioski;kiosk
+kello;time, clock
+loppua;to end
+muu;different
+Tammikuu;January
+Helmikuu;February
+Maaliskuu;March
+Huhtikuu;April
+Toukokuu;May
+Kesäkuu;June
+Heinäkuu;July
+Elokuu;August
+Syyskuu;September
+Lokakuu;October
+Marraskuu;November
+Joulukuu;December
+talvi;winter
+kevät;spring
+kesä;summer
+syksy;autumn
+valkoinen;white
+punainen;red
+sininen;blue
+keltainen;yellow
+vihreä;green
+musta;black
+ruskea;brown
+harmaa;gray
+oranssi;orange
+liila;purple
